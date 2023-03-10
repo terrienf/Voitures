@@ -1,16 +1,4 @@
 <?php
-session_start();
-
-$id ='';
-$nom ='';
-$prenom='';
-$adresse ='';
-$ville='';
-$cp='';
-
-if(isset($_POST['btnConnexion'])){
-$id = htmlspecialchars($_POST['id']);
-$nom = htmlspecialchars($_POST['nom']);
 
 ?>
 <!doctype html>
@@ -29,13 +17,13 @@ $nom = htmlspecialchars($_POST['nom']);
     <form action="modificationProprietaire.php" method="post">
 
         <label>Numéro d'identification : </label>
-        <input type="text"  id="identifiant" name="identifiant"><br>
+        <input type="text"  name="identifiant"><br>
 
         <label>Nom de famille : </label>
-        <input type="text"  id="idMarque" name="marque">
+        <input type="text"   name="nom">
         <br>
 
-        <input type="submit" value="Connexion" name="btnConnexion">
+        <input type="submit" value="Connexion" name="connexion">
     </form>
 </fieldset>
 
